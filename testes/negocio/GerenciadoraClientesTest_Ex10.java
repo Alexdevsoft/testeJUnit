@@ -29,8 +29,8 @@ public class GerenciadoraClientesTest_Ex10 {
 		/* ========== Montagem do cenário ========== */
 		
 		// criando alguns clientes
-		Cliente cliente01 = new Cliente(idCLiente01, "Gustavo Farias", 31, "gugafarias@gmail.com", 1, true);
-		Cliente cliente02 = new Cliente(idCLiente02, "Felipe Augusto", 34, "felipeaugusto@gmail.com", 1, true);
+		Cliente cliente01 = new Cliente(idCLiente01, "Alexsandro Almeida", 31, "alexhavilla2022@gmail.com", 1, true);
+		Cliente cliente02 = new Cliente(idCLiente02, "Maria dos Milagres", 34, "milahaviles@gmail.com", 1, true);
 		
 		// inserindo os clientes criados na lista de clientes do banco
 		List<Cliente> clientesDoBanco = new ArrayList<>();
@@ -128,7 +128,7 @@ public class GerenciadoraClientesTest_Ex10 {
 	public void testClienteIdadeAceitavel() throws IdadeNaoPermitidaException {
 
 		/* ========== Montagem do Cenário ========== */		
-		Cliente cliente = new Cliente(1, "Gustavo", 25, "guga@gmail.com", 1, true);
+		Cliente cliente = new Cliente(1, "Alex", 25, "alex@gmail.com", 1, true);
 		
 		/* ========== Execução ========== */
 		boolean idadeValida = gerClientes.validaIdade(cliente.getIdade());
@@ -148,7 +148,7 @@ public class GerenciadoraClientesTest_Ex10 {
 	public void testClienteIdadeAceitavel_02() throws IdadeNaoPermitidaException {
 
 		/* ========== Montagem do Cenário ========== */		
-		Cliente cliente = new Cliente(1, "Gustavo", 18, "guga@gmail.com", 1, true);
+		Cliente cliente = new Cliente(1, "Alex", 18, "alex@gmail.com", 1, true);
 		
 		/* ========== Execução ========== */
 		boolean idadeValida = gerClientes.validaIdade(cliente.getIdade());
@@ -168,7 +168,7 @@ public class GerenciadoraClientesTest_Ex10 {
 	public void testClienteIdadeAceitavel_03() throws IdadeNaoPermitidaException {
 
 		/* ========== Montagem do Cenário ========== */		
-		Cliente cliente = new Cliente(1, "Gustavo", 65, "guga@gmail.com", 1, true);
+		Cliente cliente = new Cliente(1, "Alex", 65, "alex@gmail.com", 1, true);
 		
 		/* ========== Execução ========== */
 		boolean idadeValida = gerClientes.validaIdade(cliente.getIdade());
@@ -188,7 +188,7 @@ public class GerenciadoraClientesTest_Ex10 {
 	public void testClienteIdadeAceitavel_04() throws IdadeNaoPermitidaException {
 
 		/* ========== Montagem do Cenário ========== */		
-		Cliente cliente = new Cliente(1, "Gustavo", 17, "guga@gmail.com", 1, true);
+		Cliente cliente = new Cliente(1, "Alex", 17, "alex@gmail.com", 1, true);
 
 		/* ========== Execução ========== */
 		try {
@@ -211,7 +211,7 @@ public class GerenciadoraClientesTest_Ex10 {
 	public void testClienteIdadeAceitavel_05() throws IdadeNaoPermitidaException {
 		
 		/* ========== Montagem do Cenário ========== */		
-		Cliente cliente = new Cliente(1, "Gustavo", 66, "guga@gmail.com", 1, true);
+		Cliente cliente = new Cliente(1, "Alex", 66, "alex@gmail.com", 1, true);
 		/* ========== Execução ========== */
 		try {
 			gerClientes.validaIdade(cliente.getIdade());

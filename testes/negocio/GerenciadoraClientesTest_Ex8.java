@@ -29,8 +29,8 @@ public class GerenciadoraClientesTest_Ex8 {
 		/* ========== Montagem do cenário ========== */
 		
 		// criando alguns clientes
-		Cliente cliente01 = new Cliente(idCLiente01, "Gustavo Farias", 31, "gugafarias@gmail.com", 1, true);
-		Cliente cliente02 = new Cliente(idCLiente02, "Felipe Augusto", 34, "felipeaugusto@gmail.com", 1, true);
+		Cliente cliente01 = new Cliente(idCLiente01, "Alexsandro Almeida", 31, "alexhavilla2022@gmail.com", 1, true);
+		Cliente cliente02 = new Cliente(idCLiente02, "Maria dos Milagres", 34, "alexhavilla2022@gmail.com", 1, true);
 		
 		// inserindo os clientes criados na lista de clientes do banco
 		List<Cliente> clientesDoBanco = new ArrayList<>();
